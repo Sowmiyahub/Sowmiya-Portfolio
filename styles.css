@@ -360,25 +360,26 @@
   .skill-cell .items{font-size:14.5px;color:var(--ink);line-height:1.9;}
 
   /* ---------- PROBLEM SOLVING / DSA ---------- */
-  .dsa-top{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
+  .dsa-top{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
   .dsa-chip{
     font-family:var(--umono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;
     padding:10px 18px;border:1px solid var(--ink);border-radius:20px;color:var(--ink);
     transition:.2s;display:inline-flex;align-items:center;gap:6px;
   }
   .dsa-chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
-  .problem-list{display:flex;flex-direction:column;}
-  .problem-row{
-    display:grid;grid-template-columns:220px 1fr;gap:36px;padding:16px 18px;margin:0 -18px;
-    border-bottom:1px solid var(--line);border-radius:var(--radius);transition:background .3s ease, border-color .3s ease;
+
+  .sticker-snap{max-width:290px;padding:16px 16px 20px;}
+  .sticker-snap:hover{transform:translateY(-6px) rotate(0deg) scale(1.02) !important;}
+  .snap-label{
+    display:inline-block;background:var(--trace);color:var(--white);
+    font-family:var(--umono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+    padding:6px 11px;border-radius:4px;margin-bottom:12px;
+    box-shadow:0 4px 8px rgba(74,27,64,.28);
+    transform:rotate(-3deg);
   }
-  .problem-row:last-child{border-bottom:none;}
-  .problem-row:hover{background:var(--ink);border-bottom-color:transparent;}
-  .problem-row:hover .problem-name{color:var(--paper);}
-  .problem-row:hover .problem-note{color:#D9BCD1;}
-  .problem-name{font-family:var(--mono);font-weight:700;font-size:14.5px;color:var(--ink);}
-  .problem-note{font-size:13.5px;color:var(--ink-muted);}
-  @media (max-width:860px){ .problem-row{grid-template-columns:1fr;gap:6px;} }
+  .snap-card-r .snap-label{transform:rotate(3deg);background:var(--signal);color:var(--ink);}
+  .sticker-snap img{width:100%;border-radius:8px;display:block;border:1px solid var(--line);}
+  @media (max-width:640px){ .sticker-snap{max-width:100%;} }
 
   /* ---------- LEADERSHIP ---------- */
   .lead-item{display:grid;grid-template-columns:220px 1fr;gap:36px;padding:22px 18px;margin:0 -18px;border-bottom:1px solid var(--line);border-radius:var(--radius);transition:background .3s ease, border-color .3s ease;}
